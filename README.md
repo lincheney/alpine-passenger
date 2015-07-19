@@ -54,6 +54,11 @@ plus the additional arguments supplied to `docker run`.
 
 Passenger runs on port 3000 by default and this port has been exposed.
 
+### Edge packages
+
+Passenger requires packages only available in the testing repository of Alpine Linux edge:
+[libexecinfo](http://pkgs.alpinelinux.org/package/testing/x86_64/libexecinfo) and [libexecinfo-dev](http://pkgs.alpinelinux.org/package/testing/x86_64/libexecinfo-dev).
+
 ### Building extension modules
 
 You can use this image to build the Nginx or Apache modules for Phusion Passenger.
