@@ -50,7 +50,7 @@ and [Nginx configuration](https://www.phusionpassenger.com/documentation/Users%2
 #### Default command line arguments
 
 By default, the image runs with `passenger start --no-install-runtime --no-compile-runtime --no-download`
-plus the additional supplied to `docker run`.
+plus the additional arguments supplied to `docker run`.
 
 Passenger runs on port 3000 by default and this port has been exposed.
 
