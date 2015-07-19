@@ -28,4 +28,4 @@ RUN apk add --update ca-certificates ruby procps curl pcre libstdc++ && \
 WORKDIR /usr/src/app
 EXPOSE 3000
 
-ENTRYPOINT ["passenger", "start", "--log-file=/dev/null", "--no-install-runtime", "--no-compile-runtime", "--no-download-binaries"]
+ENTRYPOINT ["passenger", "start", "--no-install-runtime", "--no-compile-runtime", "--no-download-binaries"]
