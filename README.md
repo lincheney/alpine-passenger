@@ -14,7 +14,7 @@ run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['get rack\'d']] }
 ```
 
 ... add a Dockerfile ...
-```
+```sh
 # Dockerfile
 FROM lincheney/alpine-passenger
 RUN apk add --update ruby-rack && rm -rf /var/cache/apk/*
@@ -31,7 +31,8 @@ get rack'd
 
 We can also get the Passenger status:
 ```sh
-docker exec rack-app passenger status
+> docker exec rack-app passenger status
+Phusion Passenger Standalone is running on PID 37, according to PID file /usr/src/app/passenger.3000.pid
 ```
 
 ## Details
