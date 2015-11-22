@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV PASSENGER=passenger-5.0.14 \
+ENV PASSENGER=passenger-5.0.21 \
     PATH="/passenger/bin:$PATH"
 
 # install build deps
