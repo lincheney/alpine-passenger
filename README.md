@@ -38,14 +38,14 @@ Phusion Passenger Standalone is running on PID 37, according to PID file /usr/sr
 ## Details
 
 The image based on [Alpine Linux 3.2](https://registry.hub.docker.com/_/alpine/)
-running the [Phusion Passenger Standalone runtime 5.0.14](https://www.phusionpassenger.com/documentation/Users guide Standalone.html)
-with native support compiled for [Ruby 2.2.2](http://pkgs.alpinelinux.org/package/main/x86_64/ruby).
+running the [Phusion Passenger Standalone runtime 5.0.21](https://www.phusionpassenger.com/library/config/standalone/)
+with native support compiled for [Ruby 2.2.3](http://pkgs.alpinelinux.org/package/main/x86_64/ruby).
 
 ### Phusion Passenger Standalone
 
 The standalone runtime runs on Nginx. Those interested should take a look at the 
-[docs](https://www.phusionpassenger.com/documentation/Users guide Standalone.html) provided by the Phusion team, especially [command line options](https://www.phusionpassenger.com/documentation/Users%20guide%20Standalone.html#_command_line_options)
-and [Nginx configuration](https://www.phusionpassenger.com/documentation/Users%20guide%20Standalone.html#advanced_configuration)
+[docs](https://www.phusionpassenger.com/library/config/standalone/) provided by the Phusion team, especially [command line options](https://www.phusionpassenger.com/library/config/standalone/reference/)
+and [Nginx configuration](https://www.phusionpassenger.com/library/config/standalone/intro.html#nginx-configuration-template)
 
 #### Default command line arguments
 
