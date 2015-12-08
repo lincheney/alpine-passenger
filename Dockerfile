@@ -19,10 +19,19 @@ RUN PACKAGES="ca-certificates ruby procps curl pcre libstdc++ libexecinfo" && \
     passenger-config build-native-support && \
 # app directory
     mkdir -p /usr/src/app && \
+# Cleanup passenger src directory
+    rm -rf /tmp/* && \
+    mv /opt/passenger/src/ruby_supportlib /tmp && \
+    mv /opt/passenger/src/nodejs_supportlib /tmp && \
+    mv /opt/passenger/src/helper-scripts /tmp && \
+    rm -rf /opt/passenger/src/* && \
+    mv /tmp/* /opt/passenger/src/ && \
 # Cleanup
     passenger-config validate-install --auto && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/* /opt/passenger/doc
+    rm -rf /var/cache/apk/* \
+        /tmp/* \
+        /opt/passenger/doc
 
 WORKDIR /usr/src/app
 EXPOSE 3000
