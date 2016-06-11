@@ -1,6 +1,6 @@
 FROM alpine:3.2
 
-ENV PASSENGER_VERSION="5.0.22" \
+ENV PASSENGER_VERSION="5.0.28" \
     PATH="/opt/passenger/bin:$PATH"
 
 RUN PACKAGES="ca-certificates ruby procps curl pcre libstdc++ libexecinfo" && \
