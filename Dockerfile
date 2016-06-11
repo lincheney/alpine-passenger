@@ -36,4 +36,4 @@ RUN PACKAGES="ca-certificates ruby procps curl pcre libstdc++ libexecinfo" && \
 WORKDIR /usr/src/app
 EXPOSE 3000
 
-ENTRYPOINT ["passenger", "start", "--no-install-runtime", "--no-compile-runtime", "--no-download-binaries"]
+ENTRYPOINT ["passenger", "start", "--no-install-runtime", "--no-compile-runtime"]
